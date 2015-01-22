@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/info_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5FCBF"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    tools:context="com.example.medicalcostsearch.DrugDetail" >
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_selector"
+        android:padding="15dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_search"
+        android:paddingLeft="20dp"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/searchButton"
+        android:completionThreshold="1"
+        android:dropDownHorizontalOffset="10dp"
+        android:hint="请输入药物名称搜索"
+        
+        android:singleLine="true"
+        android:width="300dp" />
+    
+
+
+    <ListView
+        android:id="@+id/drug_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#dcdcdc"
+        android:dividerHeight="1px"
+        android:paddingRight="10dp"
+        android:layout_below="@id/searchButton"
+        android:paddingTop="20dp"
+         >
+    </ListView>
+
+</RelativeLayout>

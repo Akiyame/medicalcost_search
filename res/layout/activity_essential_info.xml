@@ -1,0 +1,56 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context="com.example.medicalcostsearch.HistoryCost" >
+
+    <RelativeLayout
+        android:id="@+id/info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C5FCBF"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/header" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/header"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp"
+            android:text="张三"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/header"
+            android:layout_below="@id/user_name"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+            android:text="01234567890"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <ListView
+            android:id="@+id/info_listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#dcdcdc"
+            android:dividerHeight="1px"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="120dp" >
+        </ListView>
+    </RelativeLayout>
+
+</merge>

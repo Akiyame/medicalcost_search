@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">医费快查</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">User</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="version">版本号： 1.0</string>
+    <string name="copyright">Copyright 2014 Scu. All Rights Reserved</string>
+    <string name="user_name">张三</string>
+    <string name="title_activity_history_cost">HistoryCost</string>
+    <string name="essential">基本信息</string>
+    <string name="history">历史消费</string>
+    <string name="drug_detail">药物信息</string>
+    
+    <string name="costTitle">消费明细</string>
+    <string name="totalRest">总余额</string>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/title</item>
+    </style>
+
+    <style name="title" parent="android:Theme">
+        <item name="android:windowTitleSize">45dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+
+    <string name="title_activity_essential_info">EssentialInfo</string>
+    <string name="title_activity_consumption_detail">ConsumptionDetail</string>
+    <string name="title_activity_consumption_history">ConsumptionHistory</string>
+    <string name="title_activity_drug_detail">DrugDetail</string>
+
+</resources>

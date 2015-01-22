@@ -1,0 +1,65 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context="com.example.medicalcostsearch.ConsumptionDetailActivity" >
+
+    <RelativeLayout
+        android:id="@+id/cost_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/thisTotalCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:text="本次总消费："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/thisTotalCosts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thisTotalCost"
+            android:padding="8dp"
+            android:text="1000元"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/totalRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thisTotalCost"
+            android:padding="8dp"
+            android:text="账户总余额："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/totalRests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/totalRest"
+            android:layout_below="@id/thisTotalCost"
+            android:padding="8dp"
+            android:text="2580元"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ExpandableListView
+            android:id="@+id/cost_list"
+            android:background="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/totalRest"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+             />
+    </RelativeLayout>
+
+</merge>

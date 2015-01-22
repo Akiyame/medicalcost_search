@@ -1,0 +1,83 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#C5FCBF"
+    tools:context="com.example.medicalcostsearch.DrugDetail" >
+
+    <RelativeLayout
+        android:id="@+id/info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C5FCBF"
+        android:orientation="vertical"
+        android:paddingTop="30dp" 
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/drug_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="品名："
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/drug_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/drug_name"
+            android:padding="12dp"
+            android:text="维C银翘片"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:width="110dp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drug_name"
+            android:padding="12dp"
+            android:text="单价："
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drug_name"
+            android:layout_toRightOf="@id/price"
+            android:padding="12dp"
+            android:text="10元"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:width="90dp" />
+
+        <TextView
+            android:id="@+id/function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:padding="12dp"
+            android:text="功能："
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/functions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/price"
+            android:layout_toRightOf="@id/function"
+            android:padding="12dp"
+            android:text="感冒"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</merge>
